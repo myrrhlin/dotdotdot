@@ -110,7 +110,7 @@ alias sourceif=...sourceif # Backwards compatibility.
     # XXX This FIFO filename technique does not work on OSX
     #source <(find $d/* -prune \! -type d \! -name '.*.sw?' -exec cat {} +)
     # Use this hack for now:
-    find $d/* -prune \! -type d \! -name '.*.sw?' -exec cat {} + > /tmp/$$
+    find $d/ -prune \! -type d \! -name '.*.sw?' -exec cat {} + > /tmp/$$
     source /tmp/$$
     rm /tmp/$$
 
