@@ -1,0 +1,22 @@
+The src directory contains other repos.  For example
+
+=over 4
+
+=item dotdotdot
+
+upstream	https://github.com/ingydotnet/dotdotdot.git
+
+=item loop-dots
+
+origin	https://github.com/sharpsaw/loop-dots.git
+
+=item meredith
+
+upstream	https://github.com/merrilymeredith/dotfiles.git
+
+=item personal
+
+upstream	git://github.com/ingydotnet/ingy-dots.git
+
+=back
+
