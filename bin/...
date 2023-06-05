@@ -244,6 +244,10 @@ sub do_backup {
         print F "$file\n";
     }
     close F;
+    if (! $n) {
+        print color(32, "No dot files to backup!\n");
+        return;
+    }
     my $cmd = "(cd $home_dir; mkdir -p $backup_dir && cat $backup_list_file | cpio -dump $backup_dir)";
     $class->_run_sys($cmd);
     print color(32, "Backed up $n dot files to $backup_dir\n");
